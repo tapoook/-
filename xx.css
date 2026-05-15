@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:#30023d;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ШАПКА */
+header {
+    background: linear-gradient(135deg, #000000, #9c10c3);
+    color: white;
+    text-align: center;
+    padding: 40px 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+header p {
+    margin: 0 0 25px 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffe1e1 ;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    border-bottom-color:#30023d;
+    color: #30023d;
+}
+
+/*  ОСНОВНОЙ КОНТЕНТ  */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: rgb(241, 224, 241);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #38006d;
+    font-size: 1.8rem;
+    border-left: 5px solid #2f006d;
+    padding-left: 15px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #ffe1e1, #efd1ff);
+    border-radius: 16px;
+}
+
+.hero h2 {
+    border: none;
+    padding-left: 0;
+    font-size: 2.2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/*  СЕТКА ТУРОВ  */
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tour-card {
+    background:  #fff6f6;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.tour-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    
+}
+
+img {
+    width: 80%;
+    max-height: 180px;
+    border-radius: 20px;
+}
+
+.tour-img {
+    font-size: 4rem;
+    background:  #efd1ff;
+    padding-top: 25px;
+}
+
+.tour-card h3 {
+    margin: 10px 0 5px;
+    color: #360094;
+}
+
+.tour-card p {
+    margin: 5px 20px;
+    color: #555;
+}
+
+.tour-card strong {
+    color: #02472a;
+    font-size: 1.1em;
+}
+
+/*  ФОРМА  */
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #041820;
+    box-shadow: 0 0 0 3px rgba(3, 34, 47, 0.2);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+button,
+input[type="submit"] {
+    background-color: #470094;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 105, 148, 0.3);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #2d006d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 0, 148, 0.4);
+}
+
+button:active,
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+.error {
+    color: #ff0000;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+    min-height: 1.1em;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #880094;
+}
+
+/*  КОНТАКТЫ  */
+#contacts-block {
+    margin-top: 15px;
+    padding:
+
+
+15px;
+
+background: #ebccff;
+    border-radius: 8px;
+}
+
+/*  ПОДВАЛ  */
+footer {
+    background-color: #08010c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ВСПЛЫВАЮЩЕЕ ОКНО*/
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-overlay.active{
+    display: flex;
+}
+
+.modal-window{
+    background: rgb(212, 193, 193);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    animation: fadeiInDown 0.3s ease-out;
+}
+
+#modal-img{
+    width: 98%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#modal-close{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/*  АНИМАЦИИ */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*  АДАПТИВНОСТЬ */
+@max-width: 767px{
+    main {
+        width: 95;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .hero h2{
+        font-size: 1.7rem;
+    }
+    nav a{
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+@max-width: 450px{
+    header{
+        padding: 30px 15px;
+    }
+    nav a{
+        display: block;
+        margin: 8px 0;
+    }
+    section{
+        padding: 20px;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .hero h2{
+        font-size: 1.3rem;
+    }
+    .tours-grid{
+        grid-template-columns: 1fr;
+    }
+}
